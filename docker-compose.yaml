@@ -6,7 +6,6 @@ networks:
 
 services:
   php:
-    container_name: workshop_php
     build: ./docker/php
     volumes:
     - .:/var/www/html
@@ -15,7 +14,6 @@ services:
     - workshop
 
   nginx:
-    container_name: workshop_nginx
     image: nginx:stable
     ports:
     - 80:80
@@ -26,7 +24,6 @@ services:
     - workshop
 
   mongodb:
-    container_name: workshop_db
     image: bitnami/mongodb:latest
     networks:
     - workshop

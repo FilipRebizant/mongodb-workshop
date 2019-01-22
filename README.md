@@ -17,5 +17,5 @@ docker-compose up -d
 
 5. Open mongo shell:
 ```text
-docker exec -it workshop_db mongo
+docker-compose exec mongodb mongo
 ```
