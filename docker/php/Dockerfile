@@ -1,8 +1,9 @@
 FROM php:7.3-fpm
 
 RUN apt-get update \
-    && apt-get install -y libicu-dev g++ \
-    && docker-php-ext-install intl
+    && apt-get install -y libicu-dev libzip-dev zip git g++ \
+    && docker-php-ext-install intl \
+    && docker-php-ext-install zip
 
 # Install MongoDB
 RUN pecl install mongodb && docker-php-ext-enable mongodb
