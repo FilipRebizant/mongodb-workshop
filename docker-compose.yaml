@@ -25,5 +25,7 @@ services:
 
   mongodb:
     image: bitnami/mongodb:latest
+    ports:
+    - 27017:27017
     networks:
     - workshop
