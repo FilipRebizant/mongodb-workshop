@@ -1,0 +1,11 @@
+{
+    "name": "tarnawski/mongodb-workshop",
+    "autoload": {
+        "psr-4": {
+            "": ["src/"]
+        }
+    },
+    "require": {
+        "mongodb/mongodb": "^1.4"
+    }
+}
