@@ -6,8 +6,6 @@
         }
     },
     "require": {
-        "mongodb/mongodb": "^1.4",
-        "ext-mongodb": "^1.13",
-        "ext-json": "*"
+        "mongodb/mongodb": "^1.4"
     }
 }
